@@ -1,6 +1,6 @@
 # 📘 GO_STUDENT_API
 
-A RESTful API built using **Golang** to manage student records. This project demonstrates how to structure a basic Go-based web API with modular architecture and clean code practices.
+A RESTful API built using **Golang** and **SQLite** to manage student records. This project demonstrates how to structure a basic Go-based web API with modular architecture and clean code practices.
 
 ## 🚀 Features
 
@@ -8,22 +8,13 @@ A RESTful API built using **Golang** to manage student records. This project dem
 - ✅ Get a student record by ID  
 - ✅ List all student records  
 
-## 🧱 Project Structure
+## 📦 Requirements
 
-**GO_STUDENT_API/**
-│
-├── **cmd/** # Entry point for the application
-│ └── **Students-API/** # Main.go file with routing and config loading
-│
-├── **internal/** # Core logic and business layers
-│ ├── **config/** # Configuration loading
-│ ├── **db/** # Database initialization (if applicable)
-│ ├── **student/** # Handlers for student operations
-│ └── **types/** # Struct definitions
-│
-├── go.mod # Go module file
-└── **config/** # YAML or JSON config files
+- Go 1.22+
+- SQLite3
+- Postman for testing
 
+  
 ## Run the API: 
 go run cmd/Students-API/main.go -config config/local.yaml
 
